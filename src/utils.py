@@ -20,7 +20,7 @@ def save_object(file_path, obj):
     except Exception as e:
         raise CustomException(e, sys)
     
-def evaluate_models(X_train, y_train, Xtest, ytest, models, params ):
+def evaluate_models(X_train, y_train, X_test, y_test, models, params ):
     try:
         report={}
         for i in range(len(list(models))):
