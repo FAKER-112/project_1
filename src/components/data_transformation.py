@@ -11,8 +11,7 @@ from sklearn.compose import ColumnTransformer
 from src.logger import logging
 from src.exception import CustomException
 
-from src.utils import save_object, evaluate_models
-
+from src.utils import save_object
 @dataclass
 class DataTransformationConfig:
     preprocessor_obj_file_path = os.path.join('artifacts', 'preprocessor.pkl')
@@ -40,12 +39,13 @@ class DataTransformation:
             )
             logging.info(f'categorical columns:{categorical_columns}')
             logging.info(f'numerical columns{numerical_columns}')
-            preprocessor=ColumnTransformer(
-                [
-                    ('num_pipeline', numerical_columns, num_pipeline),
-                    ('cat_pipeline', categorical_columns, cat_pipeline)
+            preprocessor = ColumnTransformer(
+                transformers=[
+                    ('num_pipeline', num_pipeline, numerical_columns),
+                    ('cat_pipeline', cat_pipeline, categorical_columns)
                 ]
             )
+
             return preprocessor
         
         except Exception as e:
