@@ -4,9 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: "Segoe UI", sans-serif;
+        }
+        .card {
+            max-width: 750px;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        p {
+            text-align: justify;
+            margin-bottom: 25px;
+            color: #444;
+            line-height: 1.6;
+        }
+        .btn-primary {
+            padding: 10px 25px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to the home page</h1>
-    <a href="predictdata">Go to Home</a>
+    <div class="card">
+        <h1>Welcome to the Student Exam Performance Predictor</h1>
+        <p>
+            This project uses a dataset containing information about students’ backgrounds and test scores. 
+            It includes features such as gender, ethnicity, parental education level, lunch type, test preparation course, 
+            and performance in reading and writing. The goal is to predict a student’s mathematics score 
+            based on these inputs.
+        </p>
+        <p>
+            By exploring this dataset, we can better understand how different factors influence student 
+            achievement and build models that estimate exam performance with higher accuracy.
+        </p>
+        <a href="predictdata" class="btn btn-primary">Start Prediction</a>
+    </div>
 </body>
 </html>
