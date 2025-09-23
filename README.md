@@ -7,7 +7,7 @@ This project is a complete machine learning pipeline for predicting student math
 ## 📁 Project Structure
 
 ```
-pfproject/
+project_1/
 │
 ├── src/
 │   ├── __init__.py
@@ -47,7 +47,7 @@ pfproject/
 
 1. **Clone the Repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/FAKER-112/project_1.git
    cd pfproject
    ```
 
