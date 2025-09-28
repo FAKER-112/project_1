@@ -80,8 +80,7 @@ project_1/
 
 ## 📝 Author
 
-Seaforth Zanthus
-
+FAKER_112
 
 ---
 

@@ -18,9 +18,9 @@ def get_requirement(file_path:str):
 
 setup(
 name='project_0001',
-version='error_404',
-author='Seaforth Zanthus',
-author_email='error_404@gmail.com',# authorrrr doesnt have email :(
+version='',
+author='FAKER_112',
+author_email='',
 packages=find_packages(),
 install_requires=get_requirement('requirements.txt')
 
